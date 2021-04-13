@@ -11,4 +11,5 @@ duqu('./niuzi.txt').then(value => {
     console.log(value.toString());
 },reson => {
     console.log(reson);
+    
 })
