@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/vue.min.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <input type="text" v-model="aa">
+        <p v-for="(m,index) in fliterman" :key="index">{{index}}---{{m.name}}---{{m.age}}</p>
+        <button @click="setclick(1)">年龄升序</button>
+        <button @click="setclick(2)">年龄降序</button>
+        <button @click="setclick(0)">原本顺序</button>
+
+
+    </div>
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                order:0,
+                aa:'',
+                msg: "123",
+                man: [
+                    {name: "张三", age: 28},
+                    {name: "李四", age: 21},
+                    {name: "王五", age: 22},
+                ]
+            },
+            computed: {
+                //输入数据过滤列表
+                fliterman() {
+                    const { aa, man, order } = this
+                    let gman = man.filter(m => m.name.indexOf(aa) >= 0 )
+                    //升序降序
+                    if(order != 0){
+                        gman.sort((m1,m2) => {
+                            if(order == 1){
+                                return m1.age - m2.age
+                            }else{
+                                return m2.age - m1.age
+                            }
+                        })
+                    }
+                    return gman
+                }
+            },
+            methods: {
+                //删除
+                del(index){
+                    this.man.splice(index,1);
+                },
+                //替换
+                update(index){
+                    this.man.splice(index,1,{name: "jkl", age: "30"});
+                },
+                setclick(order){
+                    this.order = order
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>
