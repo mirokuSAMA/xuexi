@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/hero/hero",
+    "pages/more/more",
+    "pages/one/one",
+    "pages/two/two",
+    "pages/three/three",
+    "pages/four/four"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000C40",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#F0F2F0",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/hero/hero",
+        "text": "全 部",
+        "iconPath": "imgs/tabs/分类-英雄联盟.png",
+        "selectedIconPath": "imgs/tabs/分类-英雄联盟 (1).png"
+      },
+      {
+        "pagePath": "pages/one/one",
+        "text": "战 士",
+        "iconPath": "imgs/tabs/011剑.png",
+        "selectedIconPath": "imgs/tabs/011剑 (1).png"
+      },
+      {
+        "pagePath": "pages/two/two",
+        "text": "法 师",
+        "iconPath": "imgs/tabs/魔法棒.png",
+        "selectedIconPath": "imgs/tabs/魔法棒 (1).png"
+      },
+      {
+        "pagePath": "pages/three/three",
+        "text": "ADC",
+        "iconPath": "imgs/tabs/弓箭.png",
+        "selectedIconPath": "imgs/tabs/弓箭 (1).png"
+      },
+      {
+        "pagePath": "pages/four/four",
+        "text": "辅 助",
+        "iconPath": "imgs/tabs/心-箭筒.png",
+        "selectedIconPath": "imgs/tabs/心-箭筒 (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

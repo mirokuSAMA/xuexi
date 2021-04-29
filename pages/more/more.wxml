@@ -1,0 +1,5 @@
+<!--pages/more/more.wxml-->
+<text>英雄详情页  >>>> {{morename}}</text>
+<view class="morecontent">
+  <image class="bigimg" src="https://game.gtimg.cn/images/lol/act/img/skinloading/{{bigimg}}000.jpg"></image>
+</view>

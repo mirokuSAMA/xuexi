@@ -1,0 +1,41 @@
+/* pages/hero/hero.wxss */
+.logo{
+  transition: all 0.5s;
+  display: block;
+  margin-left: 35%;
+  width: 250rpx;
+  height: 100rpx;
+  margin-bottom: 30rpx;
+}
+.hero_container{
+  margin: 0;
+  padding: 0;
+}
+.heroimg{
+  transition: all 0.5s;
+  border-radius: 20%;
+  display: inline-block;
+  width: 140rpx;
+  height: 140rpx;
+}
+.heroimg:active{
+  border-radius: 0;
+}
+.hero_name{
+  font-family: '微软雅黑';
+  font-size:25rpx;
+  display: block;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.hero_content{
+  color: aliceblue;
+  transition: all 0.5s;
+  margin-left: 40rpx;
+  float: left;
+  text-align: center;
+}
+.hero_content:active{
+  opacity: 0.7;
+  color: red;
+}

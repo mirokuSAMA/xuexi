@@ -1,0 +1,9 @@
+/* pages/more/more.wxss */
+page{
+  color: aliceblue;
+}
+.bigimg{
+  float: left;
+  width: 208px;
+  height: 360px;
+}

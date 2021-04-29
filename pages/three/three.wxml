@@ -1,0 +1,8 @@
+<view class="hero_container">
+  <image class="logo" src="{{logo_url}}" catchtap="logo_tap" />
+  <view wx:for="{{marksman}}" wx:key="heroId" wx:for-item="item" catchtap="clickhero" wx:if="{{item.roles[0] == 'marksman'}}" data-id="{{item.title}}"
+    data-hero="{{item.heroId}}" class="hero_content">
+    <image class="heroimg" src="https://game.gtimg.cn/images/lol/act/img/champion/{{item.alias}}.png"></image>
+    <text class="hero_name">{{item.name}}</text>
+  </view>
+</view>
